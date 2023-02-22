@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCGPT</title>
+    <link rel="stylesheet" href="static/css/nav.css">
+    <link rel="stylesheet" href="static/css/test.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="https://th.bing.com/th/id/R.346c827ead8b4801a01f3bd31562a969?rik=b3qm5dKXwGILGw&riu=http%3a%2f%2fshanmugahospital.com%2fwp-content%2fuploads%2f2019%2f07%2fspecial-01.png&ehk=YtVNoxS8NlJExHN%2brDEXfsWu6LD3efLg6X5sS0fhqts%3d&risl=&pid=ImgRaw&r=0" alt="">
+            <h1 class="heading">DOCGPT</h1>
+            <ul id="left">
+                <li id="home"><a href="{{url_for('home')}}">HOME</a></li>
+                <li id="about"><a href="{{url_for('about')}}">ABOUT </a></li>
+                <LI id="working"><a href="{{url_for('working')}}">WORKING</a></LI>
+            </ul>
+        </nav>
+      <div>  <h2>TAKE A TEST IN JUST 2 MINUTES</h2></div>
+        <main>
+            
+            <div class="symptoms">
+                <div class="symptom2">
+                    <form action="{{url_for('calculate')}}" method="post">
+                        
+                        <select name="symptom1">
+                            {% for x in list %}
+                            <option value="{{x}}">{{x}}</option>
+                            {% endfor %}
+                        </select>
+                        <select name="symptom2">
+                            {% for x in list %}
+                            <option value="{{x}}">{{x}}</option>
+                            {% endfor %}
+                        </select>
+                        <select name="symptom3">
+                            {% for x in list %}
+                            <option value="{{x}}">{{x}}</option>
+                            {% endfor %}
+                        </select>
+                        <select name="symptom4">
+                            {% for x in list %}
+                            <option value="{{x}}">{{x}}</option>
+                            {% endfor %}
+                        </select>
+                        <select name="symptom5">
+                            {% for x in list %}
+                            <option value="{{x}}">{{x}}</option>
+                            {% endfor %}
+                        </select>
+                        <!-- <input type="text" name="" id="" placeholder="Enter symptom2">
+                        <input type="text" name="" id="" placeholder="Enter symptom3">
+                        <input type="text" name="" id="" placeholder="Enter symptom4">
+                        <input type="text" name="" id="" placeholder="Enter symptom5"> -->
+                        <button class="btn" type="submit">YOUR RESULT HERE</button>
+                    </form>
+                    <p>You are diagnosed with : <span>{{disease}}</span></p>
+                </div>
+            </div>
+        </main>
+    </header>
+</body>
+</html>

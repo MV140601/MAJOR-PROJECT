@@ -1,0 +1,41 @@
+
+
+nav{
+    display: flex;
+    align-items: center;
+    background-color: rgb(163, 163, 252);
+    color: white;
+    height:10vh;
+}
+nav img{
+    width: 8vw;
+    height: 8vh;
+    padding: 0px 6px;
+    margin-left: 25px;
+    
+}
+nav h1{
+    position: relative;
+    left: 370px;
+    font-size: 50PX;
+}
+
+nav ul {
+    display: flex;
+    position: relative;
+    left: 670px;
+    margin-right: 30px;
+    
+}
+nav ul li{
+    display: inline;
+    list-style-type: none;
+    padding: 0px 12px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    font-weight: bold;
+}

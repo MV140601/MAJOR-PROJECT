@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(224, 224, 206);
+    background-image: url("https://th.bing.com/th/id/R.fcbd0aeee7a48471e7907aded90ac839?rik=4adS3pkn0pNDfw&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f4%2ff%2f2%2f7074.jpg&ehk=o%2bPnu1oypUqyZmn2EyJjcAHkb7q0zM7Z3pKc6dzJVgw%3d&risl=&pid=ImgRaw&r=0");
+    background-size: cover;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    z-index: 100;
+    width: 70%;
+    margin: auto;
+    /* height: 500px; */
+    aspect-ratio: 16/9;
+    opacity: 0.9;
+}
+#carouselExample{
+    width: 100%;
+    /* height: 350px; */
+    aspect-ratio: 16/9;
+}
+
+ .test {
+
+    margin: auto;
+    margin-top: 1.5em;
+     width: 100%;
+     height: 200px;
+  
+ }
+ .btn2{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 190px;
+    margin: auto;
+    
+ }
+ .btn2 button{
+    z-index: 1000;
+    width: 20%;
+    height: 50px;
+    margin: auto;
+    border-radius: 8px;
+    background-color: rgb(173, 173, 245);
+    font-size: 20px;
+   
+ }
+ .test a{
+    text-decoration: none;
+ }
+ .test a:hover{
+    font-weight: bold;
+
+}

@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(224, 224, 206);
+    background-image: url("https://th.bing.com/th/id/R.fcbd0aeee7a48471e7907aded90ac839?rik=4adS3pkn0pNDfw&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2f4%2ff%2f2%2f7074.jpg&ehk=o%2bPnu1oypUqyZmn2EyJjcAHkb7q0zM7Z3pKc6dzJVgw%3d&risl=&pid=ImgRaw&r=0");
+    background-size: cover;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   
+}
+h2{
+    position: relative;
+    left: 540px;
+    margin-top: 40px;
+}
+.head{
+    width: 80px;
+    height: 5px;
+    margin: auto;
+    font-size: 20px;
+    display: inline-block;
+}
+.container{
+  
+    width: 90%;
+    margin: auto;
+    height: 500px;
+    background-color: rgb(175, 174, 235);
+    opacity: 0.8;
+   position: relative;
+   top: 10px;
+    
+      
+}
+#container1{
+    background-color:lightblue ;
+}
